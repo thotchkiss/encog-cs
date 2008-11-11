@@ -26,6 +26,7 @@ using System.Linq;
 using System.Text;
 
 using Encog.Neural.Genetic;
+using Encog.Solve.Genetic;
 
 namespace GeneticTSP
 {

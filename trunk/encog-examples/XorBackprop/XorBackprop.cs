@@ -24,10 +24,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using Encog.Neural.Feedforward;
-using Encog.Neural.Feedforward.Train;
-using Encog.Neural.Feedforward.Train.Backpropagation;
+using Encog.Neural.Networks;
+using Encog.Neural.Data;
+using Encog.Neural.Networks.Layers;
+using Encog.Neural.Networks.Training;
+using Encog.Neural.Networks.Training.Backpropagation;
+using Encog.Neural.Data.Basic;
+using Encog.Neural.NeuralData;
 
 namespace XorBackprop
 {
@@ -60,15 +63,17 @@ namespace XorBackprop
         /// <param name="args">Not used.</param>
         static void Main(string[] args)
         {
-            FeedforwardNetwork network = new FeedforwardNetwork();
-            network.AddLayer(new FeedforwardLayer(2));
-            network.AddLayer(new FeedforwardLayer(3));
-            network.AddLayer(new FeedforwardLayer(1));
-            network.Reset();
+            BasicNetwork network = new BasicNetwork();
+		network.AddLayer(new FeedforwardLayer(2));
+		network.AddLayer(new FeedforwardLayer(3));
+		network.AddLayer(new FeedforwardLayer(1));
+		network.Reset();
 
-            // train the neural network
-            Train train = new Backpropagation(network, XOR_INPUT, XOR_IDEAL,
-                   0.7, 0.9);
+		INeuralDataSet trainingSet = new BasicNeuralDataSet(XOR_INPUT, XOR_IDEAL);
+		
+		// train the neural network
+		 ITrain train = new Backpropagation(network, trainingSet,
+				0.7, 0.9);
 
             int epoch = 1;
 
@@ -81,11 +86,11 @@ namespace XorBackprop
 
             // test the neural network
             Console.WriteLine("Neural Network Results:");
-            for (int i = 0; i < XOR_IDEAL.Length; i++)
+            foreach (INeuralDataPair pair in trainingSet)
             {
-                double[] actual = network.ComputeOutputs(XOR_INPUT[i]);
-                Console.WriteLine(XOR_INPUT[i][0] + "," + XOR_INPUT[i][1]
-                        + ", actual=" + actual[0] + ",ideal=" + XOR_IDEAL[i][0]);
+                INeuralData output = network.Compute(pair.Input);
+                Console.WriteLine(pair.Input[0] + "," + pair.Input[1]
+                        + ", actual=" + output[0] + ",ideal=" + pair.Ideal[0]);
             }
 
         }
