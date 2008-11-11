@@ -24,9 +24,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using Encog.Neural.Feedforward;
-using Encog.Neural.Feedforward.Train.Anneal;
+using Encog.Neural.Networks;
+using Encog.Neural.Networks.Layers;
+using Encog.Neural.Data;
+using Encog.Neural.Networks.Training.Anneal;
+using Encog.Neural.Data.Basic;
+using Encog.Neural.NeuralData;
 
 namespace EncogExamplesCS
 {
@@ -59,15 +62,17 @@ namespace EncogExamplesCS
         /// <param name="args">Not used.</param>
         static void Main(string[] args)
         {
-            FeedforwardNetwork network = new FeedforwardNetwork();
-            network.AddLayer(new FeedforwardLayer(2));
-            network.AddLayer(new FeedforwardLayer(3));
-            network.AddLayer(new FeedforwardLayer(1));
-            network.Reset();
+            BasicNetwork network = new BasicNetwork();
+		network.AddLayer(new FeedforwardLayer(2));
+		network.AddLayer(new FeedforwardLayer(3));
+		network.AddLayer(new FeedforwardLayer(1));
+		network.Reset();
 
-            // train the neural network
-            NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(
-                    network, XOR_INPUT, XOR_IDEAL, 10, 2, 100);
+		INeuralDataSet trainingSet = new BasicNeuralDataSet(XOR_INPUT, XOR_IDEAL);
+		
+		// train the neural network
+		 NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(
+				network, trainingSet, 10, 2, 100);
 
             int epoch = 1;
 
@@ -82,11 +87,11 @@ namespace EncogExamplesCS
 
             // test the neural network
             Console.WriteLine("Neural Network Results:");
-            for (int i = 0; i < XOR_IDEAL.Length; i++)
+            foreach (INeuralDataPair pair in trainingSet)
             {
-                double[] actual = network.ComputeOutputs(XOR_INPUT[i]);
-                Console.WriteLine(XOR_INPUT[i][0] + "," + XOR_INPUT[i][1]
-                        + ", actual=" + actual[0] + ",ideal=" + XOR_IDEAL[i][0]);
+                INeuralData output = network.Compute(pair.Input);
+                Console.WriteLine(pair.Input[0] + "," + pair.Input[1]
+                        + ", actual=" + output[0] + ",ideal=" + pair.Ideal[0]);
             }
         }
     }

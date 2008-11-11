@@ -24,8 +24,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Encog.Solve.Anneal;
 
-using Encog.Neural.Anneal;
 
 namespace AnnealTSP
 {
@@ -130,8 +130,8 @@ namespace AnnealTSP
             {
                 int index1 = (int)Math.Floor(length * rand.NextDouble());
                 int index2 = (int)Math.Floor(length * rand.NextDouble());
-                double d = distance(index1, index1 + 1) + distance(index2, index2 + 1)
-                       - distance(index1, index2) - distance(index1 + 1, index2 + 1);
+                double d = Distance(index1, index1 + 1) + Distance(index2, index2 + 1)
+                       - Distance(index1, index2) - Distance(index1 + 1, index2 + 1);
                 if (d > 0)
                 {
 
