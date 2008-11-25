@@ -11,3 +11,4 @@ C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\bin\Debug\Encog.dll
 C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\obj\Debug\ResolveAssemblyReference.cache
 C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\obj\Debug\EncogExamplesCS.exe
 C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\obj\Debug\EncogExamplesCS.pdb
+C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\bin\Debug\Encog.pdb

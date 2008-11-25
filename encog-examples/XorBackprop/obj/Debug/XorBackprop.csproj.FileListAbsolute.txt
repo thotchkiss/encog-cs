@@ -11,3 +11,4 @@ C:\encog-cs\encog-core\encog-examples\XorBackprop\bin\Debug\Encog.dll
 C:\encog-cs\encog-core\encog-examples\XorBackprop\obj\Debug\ResolveAssemblyReference.cache
 C:\encog-cs\encog-core\encog-examples\XorBackprop\obj\Debug\XorBackprop.exe
 C:\encog-cs\encog-core\encog-examples\XorBackprop\obj\Debug\XorBackprop.pdb
+C:\encog-cs\encog-core\encog-examples\XorBackprop\bin\Debug\Encog.pdb

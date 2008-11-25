@@ -11,3 +11,4 @@ C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Debug\Encog.dll
 C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Debug\ResolveAssemblyReference.cache
 C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.exe
 C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.pdb
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Debug\Encog.pdb
