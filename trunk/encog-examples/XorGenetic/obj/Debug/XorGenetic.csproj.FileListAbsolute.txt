@@ -11,3 +11,4 @@ C:\encog-cs\encog-core\encog-examples\XorGenetic\bin\Debug\Encog.dll
 C:\encog-cs\encog-core\encog-examples\XorGenetic\obj\Debug\ResolveAssemblyReference.cache
 C:\encog-cs\encog-core\encog-examples\XorGenetic\obj\Debug\XorGenetic.exe
 C:\encog-cs\encog-core\encog-examples\XorGenetic\obj\Debug\XorGenetic.pdb
+C:\encog-cs\encog-core\encog-examples\XorGenetic\bin\Debug\Encog.pdb

@@ -11,3 +11,4 @@ C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Release\AnnealTSP.exe
 C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Release\AnnealTSP.pdb
 C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Release\Encog.dll
 C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Release\AnnealTSP.exe
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Release\Encog.pdb

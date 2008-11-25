@@ -11,3 +11,4 @@ C:\encog-cs\encog-core\encog-examples\GeneticTSP\obj\Release\ResolveAssemblyRefe
 C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\GeneticTSP.exe
 C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\GeneticTSP.pdb
 C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\Encog.dll
+C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\Encog.pdb
