@@ -103,11 +103,11 @@ namespace encog_test.Data.Market
             Assert.AreEqual(-0.562, Math.Round(pair.Input.Data[3] * 1000.0) / 1000.0);
             Assert.AreEqual(0.03, Math.Round(pair.Input.Data[4] * 1000.0) / 1000.0);
             Assert.AreEqual(0.0020, Math.Round(pair.Input.Data[5] * 1000.0) / 1000.0);
-            Assert.AreEqual(0.566, Math.Round(pair.Input.Data[6] * 1000.0) / 1000.0);
+            Assert.AreEqual(0.57, Math.Round(pair.Input.Data[6] * 100.0) / 100.0);
             Assert.AreEqual(0.929, Math.Round(pair.Input.Data[7] * 1000.0) / 1000.0);
             Assert.AreEqual(0.025, Math.Round(pair.Input.Data[8] * 1000.0) / 1000.0);
             Assert.AreEqual(-0.0070, Math.Round(pair.Input.Data[9] * 1000.0) / 1000.0);
-            Assert.AreEqual(0.084, Math.Round(pair.Input.Data[10] * 1000.0) / 1000.0);
+            Assert.AreEqual(0.08, Math.Round(pair.Input.Data[10] * 100.0) / 100.0);
             Assert.AreEqual(-0.084, Math.Round(pair.Input.Data[11] * 1000.0) / 1000.0);
             Assert.AreEqual(-0.03, Math.Round(pair.Input.Data[12] * 1000.0) / 1000.0);
             Assert.AreEqual(-0.024, Math.Round(pair.Input.Data[13] * 1000.0) / 1000.0);

@@ -64,14 +64,23 @@
     <Compile Include="Data\XML\TestXMLNeuralData.cs" />
     <Compile Include="Matrix\TestBiPolarUtil.cs" />
     <Compile Include="Matrix\TestMatrix.cs" />
+    <Compile Include="Neural\Networks\CreateNetwork.cs" />
+    <Compile Include="Neural\Networks\Layers\TestClone.cs" />
+    <Compile Include="Neural\Networks\Layers\TestHopfield.cs" />
+    <Compile Include="Neural\Networks\Layers\TestSOM.cs" />
+    <Compile Include="Neural\Networks\Training\TestAnneal.cs" />
+    <Compile Include="Neural\Networks\Training\TestBackpropagation.cs" />
+    <Compile Include="Neural\Networks\Training\TestGenetic.cs" />
     <Compile Include="Neural\Networks\XOR.cs" />
     <Compile Include="Neural\SOM\TestSOM.cs" />
+    <Compile Include="Persist\TestDataPersist.cs" />
+    <Compile Include="Persist\TestPersist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Matrix\TestMatrixMath.cs" />
     <Compile Include="Util\TestErrorCalculation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\NewFolder1\" />
+    <Folder Include="Data\Image\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
