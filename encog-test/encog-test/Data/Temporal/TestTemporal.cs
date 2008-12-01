@@ -34,7 +34,7 @@ namespace encog_test.Data.Temporal
             Assert.AreEqual(10, temporal.CalculateActualSetSize());
 
             IEnumerator<INeuralDataPair> itr = temporal.GetEnumerator();
-
+            itr.MoveNext();
             // set 0
             INeuralDataPair pair = itr.Current;
             Assert.AreEqual(10, pair.Input.Count);
@@ -128,7 +128,7 @@ namespace encog_test.Data.Temporal
             Assert.AreEqual(7, temporal.CalculateActualSetSize());
 
             IEnumerator<INeuralDataPair> itr = temporal.GetEnumerator();
-
+            itr.MoveNext();
             // set 0
             INeuralDataPair pair = itr.Current;
             Assert.AreEqual(10, pair.Input.Count);
@@ -164,7 +164,7 @@ namespace encog_test.Data.Temporal
             temporal.Generate();
 
             IEnumerator<INeuralDataPair> itr = temporal.GetEnumerator();
-
+            itr.MoveNext();
             // set 0
             INeuralDataPair pair = itr.Current;
             Assert.AreEqual(10, pair.Input.Count);
