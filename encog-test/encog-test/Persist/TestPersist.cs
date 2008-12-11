@@ -15,6 +15,7 @@ using System.IO;
 using Encog.Neural.Networks.Training.Hopfield;
 using Encog.Neural.NeuralData.Bipolar;
 using Encog.Util;
+using Encog.Neural.Data;
 
 namespace encog_test.Persist
 {
