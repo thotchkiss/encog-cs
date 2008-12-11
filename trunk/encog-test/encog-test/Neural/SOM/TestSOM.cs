@@ -9,6 +9,7 @@ using Encog.Neural.Networks.Layers;
 using Encog.Neural.Networks;
 using Encog.Util;
 using Encog.Neural.Networks.Training.SOM;
+using Encog.Neural.Data;
 
 namespace encog_test.Neural.SOM
 {

@@ -75,6 +75,7 @@
     <Compile Include="Neural\SOM\TestSOM.cs" />
     <Compile Include="Persist\TestDataPersist.cs" />
     <Compile Include="Persist\TestPersist.cs" />
+    <Compile Include="Persist\TestSerialize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Matrix\TestMatrixMath.cs" />
     <Compile Include="Util\TestErrorCalculation.cs" />

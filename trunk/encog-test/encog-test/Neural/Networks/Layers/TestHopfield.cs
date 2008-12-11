@@ -10,6 +10,7 @@ using Encog.Neural.Networks.Training;
 using NUnit.Framework;
 using Encog.Neural.Networks.Layers;
 using Encog.Neural;
+using Encog.Neural.Data;
 
 namespace encog_test.Neural.Networks.Layers
 {
